@@ -2,12 +2,14 @@
 .textSection {
     background: linear-gradient(180deg, #09232C 0%, #0F2128 100%);
     height: 800px;
+    display: flex;
+    justify-content: center;
 }
 
 .buttonDark {
     color: var(--light-blue-colour);
     border: 3px solid var(--light-blue-colour);
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .buttonLight {
@@ -35,7 +37,8 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding-bottom: 9rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
     gap: 1.5rem;
 }
 
@@ -54,9 +57,43 @@
 
 /* Blog Section Styles */
 
-/* Music Section Styles */
+.textSectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textSectionText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 1.25rem;
+}
+
+.textSectionText > p {
+    width: 55ch;
+}
 
 /* Downloads Section Styles */
+.downloadItemsContainer {
+    display: flex;
+    gap: 3rem;
+}
+
+.downloadItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.downloadItem p {
+    width: 25ch;
+}
+
+.downloadItem button {
+    align-self: center;
+}
 
 /* Transition Sections Styles */
 #transitionSection1 {
