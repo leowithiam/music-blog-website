@@ -4,13 +4,14 @@
 /* Global Variables */
 :root {
     /* Colour Variables */
-    --light-blue-colour: #26A7AD;
-    --dark-blue-colour: #09232C;
+    --light-blue-colour: rgb(38, 167, 173);
+    --dark-blue-colour: rgb(9, 35, 44);
 
     /* Font Variables */
-    --page-title-text-size: 4rem;
+    --page-title-text-size: 3rem;
     --section-title-text-size: 3rem;
     --section-subtitle-text-size: 2.5rem;
+    --description-text-size: 1.1rem;
 }
 
 /* Universal Styles */
@@ -23,6 +24,7 @@
 /* Global Styles */
 body {
     font-family: 'Exo', sans-serif;
+    color: var(--light-blue-colour);
 }
 
 h1 {
@@ -37,7 +39,20 @@ h3 {
     font-size: var(--section-subtitle-text-size)
 }
 
+p {
+    font-size: var(--description-text-size);
+}
+
+.buttonStyle {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
 .wrapper {
     padding: 0 3.75rem;
     width: 1440px;
 }
+
