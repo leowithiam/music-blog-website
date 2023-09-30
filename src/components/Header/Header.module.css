@@ -1,0 +1,36 @@
+/* Header Styles */
+.websiteHeader {
+    display: flex;
+    justify-content: center;
+    height: 4.05rem;
+    align-items: center;
+    background: linear-gradient(90deg, #111E26 16.22%, #182A35 68.54%);
+}
+
+.navBar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+
+}
+
+.navBar li {
+    list-style-type: none;
+}
+
+.navBar .navBarLink {
+    color: var(--light-blue-colour);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.navBar #homeLink {
+    font-size: 2.25rem;
+}

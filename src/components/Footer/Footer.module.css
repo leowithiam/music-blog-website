@@ -1,0 +1,13 @@
+/* Footer Styles */
+.websiteFooter {
+    height: 65px;
+    background: linear-gradient(90deg, #111E26 16.22%, #182A35 68.54%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.websiteFooter img {
+    width: 62px;
+    height: 55px;
+}

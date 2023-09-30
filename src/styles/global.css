@@ -1,0 +1,43 @@
+/* Website Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;500;700&display=swap');
+
+/* Global Variables */
+:root {
+    /* Colour Variables */
+    --light-blue-colour: #26A7AD;
+    --dark-blue-colour: #09232C;
+
+    /* Font Variables */
+    --page-title-text-size: 4rem;
+    --section-title-text-size: 3rem;
+    --section-subtitle-text-size: 2.5rem;
+}
+
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+h1 {
+    font-size: var(--page-title-text-size);
+}
+
+h2 {
+    font-size: var(--section-title-text-size)
+}
+
+h3 {
+    font-size: var(--section-subtitle-text-size)
+}
+
+.wrapper {
+    padding: 0 3.75rem;
+    width: 1440px;
+}
