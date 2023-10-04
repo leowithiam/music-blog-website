@@ -21,7 +21,7 @@
     padding: 0;
 }
 
-/* Global Styles */
+/* Global Element Styles */
 body {
     font-family: 'Exo', sans-serif;
     color: var(--light-blue-colour);
@@ -43,12 +43,25 @@ p {
     font-size: var(--description-text-size);
 }
 
+/* Global Button Styles */
 .buttonStyle {
     padding: 0.75rem 1.25rem;
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 12px;
     text-decoration: none;
+}
+
+.buttonDark {
+    color: var(--light-blue-colour);
+    border: 3px solid var(--light-blue-colour);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.buttonLight {
+    color: var(--dark-blue-colour);
+    border: 3px solid var(--dark-blue-colour);
+    background: var(--light-blue-colour);
 }
 
 .wrapper {

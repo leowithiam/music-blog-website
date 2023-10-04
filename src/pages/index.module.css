@@ -6,16 +6,21 @@
     justify-content: center;
 }
 
-.buttonDark {
-    color: var(--light-blue-colour);
-    border: 3px solid var(--light-blue-colour);
-    background: rgba(0, 0, 0, 0.4);
+.textSectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.buttonLight {
-    color: var(--dark-blue-colour);
-    border: 3px solid var(--dark-blue-colour);
-    background: var(--light-blue-colour);
+.textSectionText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 1.25rem;
+}
+
+.textSectionText > p {
+    width: 55ch;
 }
 
 /* Hero Section Styles */
@@ -55,44 +60,10 @@
     gap: 1rem;
 }
 
-/* Blog Section Styles */
-
-.textSectionContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.textSectionText {
-    display: flex;
-    flex-direction: column;
-    padding-top: 4rem;
-    gap: 1.25rem;
-}
-
-.textSectionText > p {
-    width: 55ch;
-}
-
 /* Downloads Section Styles */
 .downloadItemsContainer {
     display: flex;
     gap: 3rem;
-}
-
-.downloadItem {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
-}
-
-.downloadItem p {
-    width: 25ch;
-}
-
-.downloadItem button {
-    align-self: center;
 }
 
 /* Transition Sections Styles */

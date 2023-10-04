@@ -1,0 +1,14 @@
+.downloadItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.downloadItem p {
+    width: 25ch;
+}
+
+.downloadItem button {
+    align-self: center;
+}

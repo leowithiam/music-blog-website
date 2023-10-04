@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout/Layout"
+import DownloadsCard from "../components/DownloadsCard/DownloadsCard"
 import * as styles from './index.module.css'
 
- 
 export default function Home() {
   return (
     <Layout>
@@ -17,8 +17,8 @@ export default function Home() {
                   I like tinkering with music and tech! Here I document my explorations into music production, audio programming and DJing, hoping to distil information I pick up along the way to help other budding music tech enthusiasts!
                 </p>
                 <div className={styles.heroButtons}>
-                  <Link className={`buttonStyle ${styles.buttonDark}`} to="#blog-section">Read More</Link>
-                  <Link className={`buttonStyle ${styles.buttonLight}`} to="#music-section">My Music</Link>
+                  <Link className="buttonStyle buttonDark" to="#blog-section">Read More</Link>
+                  <Link className="buttonStyle buttonLight"  to="#music-section">My Music</Link>
                 </div>
               </div>
             </div>
@@ -52,21 +52,18 @@ export default function Home() {
               <div className={styles.textSectionText}>
                 <h2>Downloads</h2>
                 <div className={styles.downloadItemsContainer}>
-                  <div className={styles.downloadItem}>
-                    <h3>Sound FX</h3>
-                    <p>Some of the best Foley and audio FX I’ve made and recorded over the past few years!</p>
-                    <button className={`buttonStyle ${styles.buttonDark}`}>Download</button>
-                  </div>
-                  <div className={styles.downloadItem}>
-                    <h3>Samples</h3>
-                    <p>Music production samples I’ve created over the years, expect highly transient snares and wompy kicks!</p>
-                    <button className={`buttonStyle ${styles.buttonDark}`}>Download</button>
-                  </div>
-                  <div className={styles.downloadItem}>
-                    <h3>Serum Presets</h3>
-                    <p>Long live Serum! I’ve amassed my favourite original presets, some constructed for game sound design, others for EDM!</p>
-                    <button className={`buttonStyle ${styles.buttonDark}`}>Download</button>
-                  </div>
+                  <DownloadsCard
+                    titleText="Sound FX"
+                    descriptionText="Some of the best Foley and audio FX I’ve made and recorded over the past few years!"
+                  />
+                  <DownloadsCard
+                    titleText="Samples"
+                    descriptionText="Music production samples I’ve created over the years, expect highly transient snares and wompy kicks!"
+                  />
+                  <DownloadsCard
+                    titleText="Serum Presets"
+                    descriptionText="Long live Serum! I’ve amassed my favourite original presets, some constructed for game sound design, others for EDM!"
+                  />
                 </div>
               </div>
             </div>
