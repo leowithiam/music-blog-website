@@ -1,0 +1,73 @@
+.windowCardsContainer {
+    position: relative;
+}
+
+.windowCardsWrapper {
+    display: flex;
+}
+
+.windowCard {
+    width: 27rem;
+    height: 21rem;
+    border: 3px solid var(--light-blue-colour);
+    border-radius: 20px;
+    position: absolute;
+}
+
+.windowCardLine {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 24px;
+    background-color: var(--light-blue-colour);
+}
+
+.windowCardCirclesContainer {
+    --cardCircleDiameter: 12px;
+    position: absolute;
+    left: 12px;
+    top: calc(12px - (0.5 * var(--cardCircleDiameter)));
+    display: flex;
+    gap: 5px;
+}
+
+.windowCardCircle {
+    height: var(--cardCircleDiameter);
+    width: var(--cardCircleDiameter);
+    border-radius: 50%;
+    background-color: var(--light-blue-colour);
+}
+
+.windowCardContent {
+    display: flex;
+    justify-content: center;
+}
+
+.windowCardText {
+    position: absolute;
+    top: calc(24px + 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.windowCardText h3 {
+    font-size: var(--description-text-size);
+    width: 30ch;
+}
+
+.windowCardText p {
+    font-size: var(--description-small-text-size);
+    width: 40ch;
+    line-height: 1.5rem;
+}
+
+.windowCardText .cardLink {
+    text-decoration: none;
+    color: var(--light-blue-colour);
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
