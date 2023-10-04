@@ -40,16 +40,17 @@
     top: calc(24px + 1rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .windowCardText h3 {
     font-size: var(--description-text-size);
-    width: 30ch;
+    width: 90%;
 }
 
 .windowCardText p {
     font-size: var(--description-small-text-size);
-    width: 40ch;
+    width: 90%;
     line-height: 1.5rem;
 }
 

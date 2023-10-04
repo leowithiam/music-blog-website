@@ -19,7 +19,11 @@ export default function WindowCard({ titleText, descriptionText, linkText, link,
                 <p>{descriptionText}</p>
             </div>
         </div>
-        <Link className={styles.cardLink} to={link}>
+        <Link 
+        className={styles.cardLink} 
+        to={link}
+        target="_blank" 
+        rel="noopener noreferrer">
             {linkText}
             <ArrowIcon />
         </Link>

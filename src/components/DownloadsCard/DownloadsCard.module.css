@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: center;
     gap: 3rem;
+    padding: 2.5rem 0;
 }
 
 .downloadItem p {
@@ -11,4 +12,8 @@
 
 .downloadItem button {
     align-self: center;
+    color: var(--light-blue-colour);
+    border: 3px solid var(--light-blue-colour);
+    background-color: var(--dark-blue-colour);
+    cursor: pointer;
 }

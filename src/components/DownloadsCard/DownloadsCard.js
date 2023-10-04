@@ -6,7 +6,7 @@ export default function DownloadsCard({ titleText, descriptionText }) {
     <div className={styles.downloadItem}>
         <h3>{ titleText }</h3>
         <p>{ descriptionText }</p>
-        <button className="buttonStyle buttonDark">Download</button>
+        <button className="buttonStyle">Download</button>
     </div>
   )
 }

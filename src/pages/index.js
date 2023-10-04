@@ -77,7 +77,7 @@ export default function Home() {
                    link="https://www.mixcloud.com/pluxdnb/plux-house-garage-mix-1/"
                    gap="1rem">
                     <iframe 
-                      width="100%" 
+                      width="90%" 
                       height="120" 
                       src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fpluxdnb%2Fplux-house-garage-mix-1%2F" frameborder="0"
                       title="Garage & House Mix"
@@ -91,7 +91,7 @@ export default function Home() {
                    link="https://www.mixcloud.com/pluxdnb/plux-drum-bass-mix-3/"
                    gap="1rem">
                     <iframe 
-                      width="100%" 
+                      width="90%" 
                       height="120" 
                       src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fpluxdnb%2Fplux-drum-bass-mix-3%2F" frameborder="0"
                       title="Melodic Drum & Bass Mix">
@@ -104,7 +104,7 @@ export default function Home() {
                    link="https://soundcloud.com/pluxdnb/i-wish"
                    gap="1rem">
                     <iframe 
-                      width="100%" 
+                      width="90%" 
                       height="120" 
                       frameborder="no" 
                       allow="autoplay" 
@@ -126,7 +126,7 @@ export default function Home() {
                 <div className={styles.downloadCardsContainer}>
                   <DownloadsCard
                     titleText="Sound FX"
-                    descriptionText="Some of the best Foley and audio FX I’ve made and recorded over the past few years!"
+                    descriptionText="Some of the best Foley and audio FX I’ve made and recorded over the past few years, featuring game & film audio FX!"
                   />
                   <DownloadsCard
                     titleText="Samples"
