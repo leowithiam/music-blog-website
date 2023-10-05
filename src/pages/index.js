@@ -134,14 +134,17 @@ export default function Home() {
                   <DownloadsCard
                     titleText="Sound FX"
                     descriptionText="Some of the best Foley and audio FX I’ve made and recorded over the past few years, featuring game & film audio FX!"
+                    downloadURL="/sound-fx.zip"
                   />
                   <DownloadsCard
                     titleText="Samples"
-                    descriptionText="Music production samples I’ve created over the years, expect highly transient snares and wompy kicks!"
+                    descriptionText="Music production samples I’ve used and refined over the years, expect highly transient snares and wompy kicks!"
+                    downloadURL="/samples.zip"
                   />
                   <DownloadsCard
                     titleText="Serum Presets"
                     descriptionText="Long live Serum! I’ve amassed my favourite original presets, some constructed for game sound design, others for EDM!"
+                    downloadURL="/serum-presets.zip"
                   />
                 </div>
               </div>

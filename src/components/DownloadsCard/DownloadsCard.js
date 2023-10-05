@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import * as styles from './DownloadsCard.module.css'
 import DownloadsModal from '../DownloadsModal/DownloadsModal'
 
-export default function DownloadsCard({ titleText, descriptionText }) {
+export default function DownloadsCard({ titleText, descriptionText, downloadURL }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleDownloadClick = () => {
@@ -15,7 +15,7 @@ export default function DownloadsCard({ titleText, descriptionText }) {
 
   let modal;
   if (isModalOpen) {
-    modal = <DownloadsModal onClose={handleModalClose} />
+    modal = <DownloadsModal onClose={handleModalClose} downloadURL={downloadURL}/>
   }
   
   return (
