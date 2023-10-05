@@ -1,0 +1,22 @@
+.carouselContainer {
+    position: relative;
+    width: 27rem;
+    height: 21rem;
+}
+
+.carouselContainer button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: var(--dark-blue-colour);
+    border: none;
+}
+
+.backButton {
+    left: -5rem;
+}
+
+.forwardButton {
+    right: -5rem;
+}
