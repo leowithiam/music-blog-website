@@ -12,8 +12,5 @@
 
 .downloadItem button {
     align-self: center;
-    color: var(--light-blue-colour);
-    border: 3px solid var(--light-blue-colour);
-    background-color: var(--dark-blue-colour);
     cursor: pointer;
 }

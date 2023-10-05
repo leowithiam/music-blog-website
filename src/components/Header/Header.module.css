@@ -5,6 +5,9 @@
     height: 4.05rem;
     align-items: center;
     background: linear-gradient(90deg, #111E26 16.22%, #182A35 68.54%);
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .navBar {

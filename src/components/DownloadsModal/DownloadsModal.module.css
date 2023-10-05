@@ -1,0 +1,71 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal{
+    background: var(--dark-blue-colour);
+    padding: 1.1rem;
+    border-radius: 10px;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal > button {
+    background-color: var(--dark-blue-colour);
+    color: var(--light-blue-colour);
+    border: none;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+}
+
+.modal h3 {
+    padding: 2rem 2rem;
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.emailForm #email {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 80%
+}
+
+.emailForm #email:focus {
+    outline: 1px solid var(--light-blue-colour);
+}
+
+.emailForm #checkbox {
+    margin-right: 1rem;
+}
+
+.emailForm p {
+    width: 80%;
+    font-size: 0.7rem;
+    margin-top: -0.4rem;
+}
+
+.emailForm button {
+    display: block;
+    margin: 1rem 0 2rem 0;
+}
+

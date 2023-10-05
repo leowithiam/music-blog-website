@@ -56,7 +56,8 @@ p {
 .buttonDark {
     color: var(--light-blue-colour);
     border: 3px solid var(--light-blue-colour);
-    background: rgba(0, 0, 0, 0.4);
+    background-color: var(--dark-blue-colour);
+    cursor: pointer;
 }
 
 .buttonLight {

@@ -20,7 +20,7 @@ export default function Home() {
                   I like tinkering with music and tech! Here I document my explorations into music production, audio programming and DJing, hoping to distil information I pick up along the way to help other budding music tech enthusiasts!
                 </p>
                 <div className={styles.heroButtons}>
-                  <Link className="buttonStyle buttonDark" to="#blog-section">Read More</Link>
+                  <Link className={`buttonStyle ${styles.heroButtonDark}`} to="#blog-section">Read More</Link>
                   <Link className="buttonStyle buttonLight"  to="#music-section">My Music</Link>
                 </div>
               </div>
@@ -110,8 +110,15 @@ export default function Home() {
                       allow="autoplay" 
                       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1085548315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
                       title="Plux - I Wish">
-                      </iframe>
+                    </iframe>
                   </WindowCard>
+                  <Link 
+                  className="buttonStyle buttonDark" 
+                  to="https://linktr.ee/pluxdnb"
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                    More Music
+                  </Link>
                 </div>
               </div>
             </div>
