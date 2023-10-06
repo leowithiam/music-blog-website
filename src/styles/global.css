@@ -22,6 +22,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Global Element Styles */
 body {
     font-family: 'Exo', sans-serif;
@@ -51,6 +55,57 @@ p {
     font-weight: 700;
     border-radius: 12px;
     text-decoration: none;
+    overflow: hidden; 
+    white-space: nowrap; 
+    transition: all 0.3s ease;
+}
+
+.buttonStyle:hover {
+    /* transform: scale(1.05); */
+    border-radius: 0;
+}
+
+.buttonStyle span {
+    display: inline-block;
+    position: relative;
+    animation: textExit 0.3s forwards;
+}
+
+.buttonStyle:hover span {
+    animation: textEnter 0.3s forwards;
+}
+
+@keyframes textEnter {
+    0%, 100% { 
+        transform: translateX(0);
+        visibility: visible; 
+    }
+
+    33% {
+        transform: translateX(150%);
+        visibility: hidden;
+    }
+    
+    66% { 
+        transform: translateX(-150%); 
+        visibility: hidden;
+    }
+}
+
+@keyframes textExit {
+    0%, 100% { 
+        transform: translateX(0);
+        visibility: visible; 
+    }
+
+    33% {
+        transform: translateX(150%);
+        visibility: hidden;
+    }
+    66% { 
+        transform: translateX(-150%); 
+        visibility: hidden;
+    }
 }
 
 .buttonDark {

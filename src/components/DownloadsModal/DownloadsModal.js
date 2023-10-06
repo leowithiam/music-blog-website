@@ -42,7 +42,9 @@ export default function DownloadsModal({ onClose, downloadURL }) {
           <p>
             You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.
           </p>
-          <button className="buttonStyle buttonDark" type="submit">Download</button>
+          <button className="buttonStyle buttonDark" type="submit">
+            <span>Download</span>
+          </button>
         </form>
       </div>
     </div>

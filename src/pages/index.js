@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import Layout from "../components/Layout/Layout"
 import DownloadsCard from "../components/DownloadsCard/DownloadsCard"
 import * as styles from './index.module.css'
-import WindowCard from '../components/WindowCard/WindowCard'
 import WindowCardCarousel from '../components/WindowCardCarousel/WindowCardCarousel'
 
 const blogCardsValues = {
@@ -74,7 +73,7 @@ const musicCardsData = [
   {
     titleText: "Plux - I Wish",
     descriptionText: "A Future Bass track I released in 2021. Nothing beats super saws and vocal chops! 🎧",
-    link: "/",
+    link: "https://soundcloud.com/pluxdnb/i-wish",
     linkText: musicCardsValues.linkText,
     gap: musicCardsValues.gap,
     children: (
@@ -105,8 +104,12 @@ export default function Home() {
                   I like tinkering with music and tech! Here I document my explorations into music production, audio programming and DJing, hoping to distil information I pick up along the way to help other budding music tech enthusiasts!
                 </p>
                 <div className={styles.heroButtons}>
-                  <Link className={`buttonStyle ${styles.heroButtonDark}`} to="#blog-section">Read More</Link>
-                  <Link className="buttonStyle buttonLight"  to="#music-section">My Music</Link>
+                  <Link className={`buttonStyle ${styles.heroButtonDark}`} to="#blog-section">
+                    <span>Read More</span>
+                  </Link>
+                  <Link className="buttonStyle buttonLight"  to="#music-section">
+                    <span>My Music</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -141,7 +144,7 @@ export default function Home() {
                   to="https://linktr.ee/pluxdnb"
                   target="_blank" 
                   rel="noopener noreferrer">
-                    More Music
+                    <span>More Music</span>
                   </Link>
                 </div>
               </div>

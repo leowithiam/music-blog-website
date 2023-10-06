@@ -24,7 +24,9 @@ export default function DownloadsCard({ titleText, descriptionText, downloadURL 
         <p>{ descriptionText }</p>
         <button 
          className="buttonStyle buttonDark"
-         onClick={handleDownloadClick}>Download</button>
+         onClick={handleDownloadClick}>
+          <span>Download</span>
+        </button>
         {modal}
     </div>
   )

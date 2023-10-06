@@ -19,7 +19,7 @@ export default function WindowCardCarousel({ cardsData }) {
 
     return (
         <div className={styles.carouselContainer}>
-            <WindowCard {...cardsData[currentIndex]} />
+            <WindowCard {...cardsData[currentIndex]} goForward={goForward} goBackward={goBackward} />
             <button className={styles.backButton} onClick={goBackward}>
                 <BackwardsButton />
             </button>

@@ -12,13 +12,13 @@ export default function Header() {
             </p>
             <ul>
               <li>
-                <Link className={styles.navBarLink} to='#blog-section'>Blog</Link>
+                <Link className={styles.navBarLink} to='/#blog-section'>Blog</Link>
               </li>
               <li>
-                <Link className={styles.navBarLink} to='#music-section'>Music</Link>
+                <Link className={styles.navBarLink} to='/#music-section'>Music</Link>
               </li>
               <li>
-                <Link className={styles.navBarLink} to='#downloads-section'>Downloads</Link>
+                <Link className={styles.navBarLink} to='/#downloads-section'>Downloads</Link>
               </li>
             </ul>
           </nav>

@@ -32,6 +32,11 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.navBarLink:hover {
+    color: rgb(68, 197, 203);
 }
 
 .navBar #homeLink {
