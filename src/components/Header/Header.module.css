@@ -36,9 +36,65 @@
 }
 
 .navBarLink:hover {
-    color: rgb(68, 197, 203);
+    color: var(--highlight-accent-colour);
 }
 
 .navBar #homeLink {
     font-size: 2.25rem;
+}
+
+.menuIcon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.menuIcon img {
+    width: 49px;
+    height: 42px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menuIcon img.rotated {
+    transform: rotate(-180deg);
+}
+
+.dropDownMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4.05rem; 
+    left: 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #111E26 16.22%, #182A35 68.54%);
+    z-index: 9999;
+    padding: 1rem 0 2rem 0;
+}
+
+.dropDownMenu li {
+    list-style-type: none;
+    padding: 0.25rem 0;
+    color: var(--hyper-blue-accent-colour);
+    font-size: var(--text-font-size);
+}
+
+@media (min-width: 801px) {
+    .dropDownMenu {
+        display: none !important; /* Hide the dropdown at viewports > 800px */
+    }
+}
+
+@media (max-width: 800px) {
+    #navBarLinksList {
+        display: none;
+    }
+    .menuIcon {
+        display: flex;
+    }
+    .dropDownMenu {
+        display: flex;
+    }
 }

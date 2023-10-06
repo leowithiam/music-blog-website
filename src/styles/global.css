@@ -6,6 +6,10 @@
     /* Colour Variables */
     --light-blue-colour: rgb(38, 167, 173);
     --dark-blue-colour: rgb(9, 35, 44);
+    --highlight-accent-colour: rgb(213, 251, 255);
+    --exit-red-colour: rgb(239, 109, 92);
+    --minimise-yellow-colour: rgb(246, 191, 72);
+    --expand-green-colour: rgb(93, 196, 80);
 
     /* Font Variables */
     --page-title-text-size: 3rem;
@@ -22,11 +26,15 @@
     padding: 0;
 }
 
+/* Global Element Styles */
+::-webkit-scrollbar-track {
+    background-color: linear-gradient(180deg, #09232C 0%, #0F2128 100%);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Global Element Styles */
 body {
     font-family: 'Exo', sans-serif;
     color: var(--light-blue-colour);
@@ -61,7 +69,6 @@ p {
 }
 
 .buttonStyle:hover {
-    /* transform: scale(1.05); */
     border-radius: 0;
 }
 
@@ -115,10 +122,19 @@ p {
     cursor: pointer;
 }
 
+.buttonDark:hover {
+    color: var(--highlight-accent-colour);
+    border-color: var(--highlight-accent-colour);
+}
+
 .buttonLight {
     color: var(--dark-blue-colour);
     border: 3px solid var(--dark-blue-colour);
     background: var(--light-blue-colour);
+}
+
+.buttonLight:hover {
+    background-color: var(--highlight-accent-colour);
 }
 
 .wrapper {
@@ -126,3 +142,9 @@ p {
     width: 1440px;
 }
 
+@media (max-width: 500px) {
+    .wrapper {
+        padding: 0 2.75rem;
+        width: 1440px;
+    }
+}

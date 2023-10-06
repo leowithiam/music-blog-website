@@ -1,7 +1,12 @@
 .carouselContainer {
+    --carousel-card-width: 27rem;
+    --carousel-card-height: 21rem;
     position: relative;
-    width: 27rem;
-    height: 21rem;
+    width: var(--carousel-card-width);
+    height: var(--carousel-card-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carouselContainer button {
@@ -19,4 +24,83 @@
 
 .forwardButton {
     right: -5rem;
+}
+
+@media (max-width: 800px) {
+    .carouselContainer{
+        --carousel-card-width: 23rem;
+        --carousel-card-height: 21rem;     
+    }
+}
+
+@media (max-width: 600px) {
+    .carouselContainer{
+        --carousel-card-width: 20rem;
+        --carousel-card-height: 23rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .backButton {
+        left: -4rem;
+    }
+    
+    .forwardButton {
+        right: -4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .carouselContainer button {
+        position: absolute;
+        top: 110%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: var(--dark-blue-colour);
+        border: none;
+    }
+    .backButton {
+        position: absolute;
+        left: 6rem;
+        bottom: 200px;
+    }
+    .forwardButton {
+        position: absolute;
+        right: 6rem;
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    .carouselContainer{
+        --carousel-card-width: 18rem;
+        --carousel-card-height: 23rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .carouselContainer{
+        --carousel-card-width: 16rem;
+        --carousel-card-height: 23rem;
+    }
+    .backButton {
+        left: 5rem;
+    }
+    .forwardButton {
+        right: 5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .carouselContainer{
+        --carousel-card-width: 14rem;
+        --carousel-card-height: 25rem;
+    }
+    .backButton {
+        left: 4rem;
+    }
+    .forwardButton {
+        right: 4rem;
+    }
 }

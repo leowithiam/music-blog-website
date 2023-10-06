@@ -137,7 +137,7 @@ export default function Home() {
               <div className={styles.textSectionText}>
                 <h2>Music</h2>
                 <p>I also produce my own music and release DJ mixes from time to time, here are my latest releases! </p>
-                <div className={styles.windowCardsContainer}>
+                <div className={styles.windowCardsContainer} id={styles.musicWindowCardsContainer}>
                   <WindowCardCarousel cardsData={musicCardsData} />
                   <Link 
                   className="buttonStyle buttonDark" 

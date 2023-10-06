@@ -3,9 +3,9 @@
 }
 
 .svg:hover .forwardsPath {
-    fill: rgb(246, 191, 72);
+    fill: var(--minimise-yellow-colour);
 }
 
 .svg:hover .backwardsPath {
-    fill: rgb(239, 109, 92);
+    fill: var(--exit-red-colour);
 }

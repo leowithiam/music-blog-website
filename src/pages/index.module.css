@@ -72,13 +72,20 @@
     border: 3px solid var(--light-blue-colour);
     background-color: rgba(0, 0, 0, 0.4);
     position: relative;
+    transition: all 0.3s ease;
+
+}
+
+.heroButtonDark:hover {
+    color: var(--highlight-accent-colour);
+    border-color: var(--highlight-accent-colour);
 }
 
 /* Downloads Section Styles */
 .downloadCardsContainer {
     display: flex;
     gap: 3rem;
-    padding: 3rem 0 10rem 0;
+    padding: 3rem 0 8rem 0;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -100,4 +107,48 @@
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+}
+
+@media (max-width: 1100px){
+    .heroContent {
+        padding-bottom: 10rem;
+        padding-left: 0rem;
+    }
+    .heroContent h1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 824px){
+    .heroContent p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 775px) {
+    .textSectionText > p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #musicButton {
+        margin-top: 3rem;
+    }
+    #musicWindowCardsContainer {
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .heroButtons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heroContent h1 {
+        font-size: 2.75rem;
+    }
+    .textSectionContent {
+        margin-top: 2rem;
+    }
 }
