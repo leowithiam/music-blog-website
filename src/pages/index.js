@@ -14,21 +14,21 @@ const blogCardsData = [
   {
     titleText: "FrostByte Unveiled: Crafting Planewaves in a 3D Audio World",
     descriptionText: "FrostByte is an Ambisonic mono planewave encoder audio plugin, with implemented pantophonic stereo decode algorithms and featuring elevation and azimuth parameters.",
-    link: "/",
+    link: "/blog/developing-frostbyte",
     linkText: blogCardsValues.linkText,
     gap: blogCardsValues.gap
   },
   {
     titleText: "Journeying Beyond Stereo: Developing Event Horizon",
     descriptionText: "Event Horizon is a stereo-widener plugin, utilising the Blumlein mid-side pseudo-stereo technique to provide separately alterable mid and side signal parameters for stereo audio formats.",
-    link: "/",
+    link: "/blog/developing-event-horizon",
     linkText: blogCardsValues.linkText,
     gap: blogCardsValues.gap
   },
   {
     titleText: "Mixing to Making: How Understanding Music Keys Can Elevate Your DJ Game",
     descriptionText: "An understanding of the circle of fifths, and music key counterparts to camelot key codes can be a helpful first step in bridging the gap between DJing, improvisation and music production.",
-    link: "/",
+    link: "/blog/music-keys-vs-camelot-codes",
     linkText: blogCardsValues.linkText,
     gap: blogCardsValues.gap
   }

@@ -70,7 +70,7 @@
     left: 0px;
     width: 100%;
     background: linear-gradient(90deg, #111E26 16.22%, #182A35 68.54%);
-    z-index: 9999;
+    z-index: 999;
     padding: 1rem 0 2rem 0;
 }
 
@@ -83,7 +83,7 @@
 
 @media (min-width: 801px) {
     .dropDownMenu {
-        display: none !important; /* Hide the dropdown at viewports > 800px */
+        display: none !important; 
     }
 }
 
