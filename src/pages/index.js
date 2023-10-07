@@ -140,6 +140,7 @@ export default function Home() {
                 <div className={styles.windowCardsContainer} id={styles.musicWindowCardsContainer}>
                   <WindowCardCarousel cardsData={musicCardsData} />
                   <Link 
+                  id={styles.musicButton}
                   className="buttonStyle buttonDark" 
                   to="https://linktr.ee/pluxdnb"
                   target="_blank" 
