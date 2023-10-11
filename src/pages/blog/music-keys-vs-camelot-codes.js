@@ -17,7 +17,12 @@ export default function BlogPostMusicKeysVsCamelotCodes() {
                     <CalendarIcon />
                     <p>26/09/2023</p>
                   </div>
-                  <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '20px', margin: '1rem 0 2rem 0'}} width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FjtUW8Bl83Ca68fPcDAnKO5%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DBN1qFbqeLzsSC7z0-1" allowfullscreen></iframe>
+                  <iframe 
+                    style={{border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '20px', margin: '1rem 0 2rem 0'}} width="100%" height="500" 
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FjtUW8Bl83Ca68fPcDAnKO5%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DBN1qFbqeLzsSC7z0-1" 
+                    allowfullscreen
+                    title="Figma File for Music Key and Camelot Code Conversions"> 
+                  </iframe>
                 </header>
                 <main className={styles.blogPostMain}>
                   <section>
