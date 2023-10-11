@@ -1,8 +1,8 @@
 # Music Blog Website 🎹
 
-A Gatsby project designed in Figma, hosted and deployed with Netlify, and using Netlify Forms to handle form data.
+A Gatsby project designed in Figma, hosted and deployed with Netlify, and handling form data with Netlify Forms.
 
-- [Figma Design File]()
+- [Figma Design]()
 - [Deployed Website]()
 
 ## Technology Stack
@@ -25,13 +25,13 @@ With this portfolio project, I not only wanted to showcase my proficiency in mor
 
 ### Card Carousel
 
-An interactive feature on the homepage which cycles through card React components in an infinite loop:
+An interactive feature on the homepage which cycles through React card components in an infinite loop:
 
 <img src="docs-assets/card-carousel-demo.gif" width="600"/>
 
 ### Download Modal
 
-A pop-up window that requires email input and a checked marketing checkbox to download content (the email, being subsequently handled by Netlify Forms):
+A pop-up window that requires email input and a checked marketing checkbox to download content (the email, being subsequently handled by Netlify Forms, and materials subsequently downloaded sourced from my music production work):
 
 <img src="docs-assets/download-modal-demo.gif" width="600"/>
 
@@ -61,7 +61,7 @@ The design process for this project involved looking at the aesthetic already es
 - [Not a Number](https://www.nan.fyi/)
 - [Cassie Codes](https://www.cassie.codes/)
 
-I then created a Figma design file using auto-layout to outline a desktop layout, and a mobile layout for both the homepage and the blog post pages for the project.
+I then created a Figma design file using auto-layout to outline a desktop layout, and a mobile layout for both the homepage and the blog post pages for the project.All images featured on the homepage are AI generated, using [Leonardo.Ai](https://leonardo.ai/), a free AI image generation service. This allowed me to obtain high-resolution images that matched the same aesthetic and colour scheme I wanted without extensive photo editing.
 
 ## Challenges
 

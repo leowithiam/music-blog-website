@@ -11,8 +11,21 @@ export default function DownloadsModal({ onClose, downloadURL }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = downloadURL;
-    onClose();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => {
+      console.log("Form successfully submitted");
+      window.location.href = downloadURL;
+      onClose();
+    })
+    .catch((error) => alert(error));
   }
   
   return (
@@ -20,7 +33,12 @@ export default function DownloadsModal({ onClose, downloadURL }) {
       <div className={styles.modal}>
         <button onClick={onClose}>X</button>
         <h3>Please Enter Your Email for Download</h3>
-        <form onSubmit={handleSubmit} className={styles.emailForm}>
+        <form 
+        onSubmit={handleSubmit} 
+        className={styles.emailForm}
+        name="emailData"
+        data-netlify="true">
+          <input type="hidden" name="form-name" value="emailData" />
           <input 
             type="email" 
             name="email"
@@ -33,7 +51,8 @@ export default function DownloadsModal({ onClose, downloadURL }) {
             <input
               type="checkbox"
               name="checkbox"
-              id={styles.checkbox}
+              className={styles.checkbox}
+              id="marketingCheckbox"
               required/>
             <label htmlFor="marketingCheckbox">
               I agree to receive marketing communications from Plux
