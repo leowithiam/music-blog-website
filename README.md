@@ -2,8 +2,8 @@
 
 A Gatsby project designed in Figma, hosted and deployed with Netlify, and handling form data with Netlify Forms.
 
-- [Figma Design]()
-- [Deployed Website]()
+- [Figma Design](https://www.figma.com/file/ASmcVwkDMcHRnhblKE3Cgt/Music-Blog-Website?type=design&mode=design&t=EknlmpvGS189ihWz-1)
+- [Deployed Website](https://plux-music-blog-demo.netlify.app/)
 
 ## Technology Stack
 
@@ -31,7 +31,7 @@ An interactive feature on the homepage which cycles through React card component
 
 ### Download Modal
 
-A pop-up window that requires email input and a checked marketing checkbox to download content (the email, being subsequently handled by Netlify Forms, and materials subsequently downloaded sourced from my music production work):
+A pop-up window that requires email input and a checked marketing checkbox to download content. The entered email is processed by Netlify Forms. The downloadable materials are sourced from my music production work:
 
 <img src="docs-assets/download-modal-demo.gif" width="600"/>
 
@@ -43,12 +43,12 @@ A navigation menu bar that collapses to the music producer's logo for smaller sc
 
 ### Accessibility
 
-- **ARIA Attributes:** Utilized `aria-label` to provide accessible names for elements, particularly those inserted with CSS as background images.
-- **Keyboard Navigation:** Ensured all interactive elements are keyboard-navigable and visible focus indicators are provided.
+- **ARIA Attributes:** Utilised `aria-label` to provide accessible names for elements, particularly those inserted with CSS as background images.
+- **Keyboard Navigation:** Ensured all interactive elements are keyboard-navigable.
 
 ### Styling Details
 
-Styling the window control buttons for the carousel cards, using the MacOS colour scheme, and colour coding their functionality:
+Styled clickable window control buttons for the carousel cards, using the MacOS colour scheme, and colour coding their functionality:
 
 <img src="docs-assets/styling-details-demo.gif" width="600"/>
 
@@ -61,19 +61,34 @@ The design process for this project involved looking at the aesthetic already es
 - [Not a Number](https://www.nan.fyi/)
 - [Cassie Codes](https://www.cassie.codes/)
 
-I then created a Figma design file using auto-layout to outline a desktop layout, and a mobile layout for both the homepage and the blog post pages for the project.All images featured on the homepage are AI generated, using [Leonardo.Ai](https://leonardo.ai/), a free AI image generation service. This allowed me to obtain high-resolution images that matched the same aesthetic and colour scheme I wanted without extensive photo editing.
+I then created Figma designs using auto-layout to outline a desktop layout, and a mobile layout for both the homepage and the blog post pages for the project. All images featured on the homepage are AI generated, using [Leonardo.Ai](https://leonardo.ai/), a free AI image generation service. This allowed me to obtain high-resolution images that matched the same aesthetic and colour scheme I wanted without extensive photo editing.
 
 ## Challenges
 
-There were a few points during the development of this project that challenged me to think creatively and develop my understanding:
+There were a few points during the development of this project that challenged me to think creatively and develop my understanding of:
 
-- Creating reusable components: Developed strategies for creating reusable components, like passing CSS directly as props, which facilitated maintaining the same card carousel components between different sections (Blog and Music) with varying content and styles.
-- Generalizing CSS rules: Developed flexible CSS rules for a single CSS module that could robustly interpret varied blog content and assure reliable responsive behaviors across blog post pages.
+- **Creating Reusable Components:**
 
-## What This Project Taught Me
+  - **Problem**: Wanted to use the same card carousel components between the Blog and Music sections of the homepage, but they had been designed to contian different types of content with different styles.
+  - **Solution**: Developed strategies for creating reusable components by passing CSS directly as props and using the `children` props object.
 
-There was also much practical experience gained from this project:
+- **Generalising CSS Rules:**
 
-- A deeper understanding of React practices such as: abstracting code into components, handling state using the useState React Hook and passing content between components using props.
-- Organising and managing source code files, CSS modules, assets and directory structures in a more component-heavy Gatsby project.
-- Creating more complex, multi-step animations with the CSS animation property for button and link hover interactions.
+  - **Problem**: Wanted to use the same CSS module to style all blog post pages.
+  - **Solution**: Developed flexible CSS rules that could robustly interpret varied blog content and assure reliable responsive behaviours across blog post pages.
+
+## Skills Developed
+
+This project helped develop skills and increase experience in:
+
+- **React:** Creating function components, passing props and handling state and synthetic events.
+- **Gatsby:** CSS modules, page routing, Gatsby's Link component, generating a Layout component.
+- **CSS:** Creating more complex, multi-step animations with the `animation` property and creating and positioning shapes made with CSS using `div` elements and the `position` property.
+- **Project Organisation:** Organising and managing source code files, CSS modules, assets and directory structures in a more component-heavy Gatsby project.
+
+## Future Developments
+
+Gatsby not only offers a wide range of plugins, but also has a GraphQL layer. There are exciting possibilities for extending this project using both:
+
+- **Creating Blog Post Webpages from Markdown**: Using plugins such as `gatsby-source-filesystem` and `gatsby-transformer-remark` to transform Markdown files into a queryable format, and query this data using GraphQL to inject into React components.
+- **Secure File Distribution with Netlify Forms**: Rather than hosting downloadable materials in a public directory, their security could be elevated by integrating Netlify Forms with serverless functions. Upon a user's request (via form submission), a temporary and encrypted download link could be generated and delivered to the user.
